@@ -52,6 +52,20 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: all 1s ease;
+}
+
+.move {
+  right: 50px;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(-150px,0);
+  }
 }
 
 .panel {
