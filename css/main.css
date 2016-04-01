@@ -76,6 +76,7 @@ div {
 
   background-color: yellow;
   transform: translateY(-50%);
+  transition: all .5s ease;
 
   color: darkgoldenrod;
   text-align: center;
@@ -84,6 +85,10 @@ div {
 .panel h2 {
   margin: 0;
   padding: 3rem 0;
+}
+
+.collapse {
+  max-height: 0;
 }
 
 .circle {
