@@ -1,6 +1,6 @@
 var $box = $('.box');
 var $btnshowHide = $('.btn-show-hide');
-var $diamond = $('.diamond')
+var $diamond = $('.diamond');
 var $btnmoveIn = $('.btn-move');
 var $panel = $('.panel');
 var $btncollapse = $('.btn-collapse-expand');
@@ -22,13 +22,17 @@ $btncollapse.on('click', function () {
 });
 
 $btnbounce.on('click', function () {
-  $circle.toggleClass('bounce');
+  $circle.addClass('bounce');
+});
+
+$btnbounce.on('animationend', function () {
+  $circle.removeClass('bounce');
 });
 
 $btnlist.on('click', function (e) {
   var $li = $('<li>');
 
   e.preventDefault();
-  $li.html("new list item");
+  $li.html('new list item');
   $list.append($li);
 });
