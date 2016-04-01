@@ -35,6 +35,13 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+  transition:
+    opacity .3s ease-out
+    ;
+}
+
+.appear {
+  opacity: 1;
 }
 
 .diamond {
